@@ -4,6 +4,13 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'todember',
     environment: environment,
+    contentSecurityPolicy: { 'connect-src': "'self' wss://*.firebaseio.com" },
+    firebase: {
+      apiKey: "AIzaSyCThAoIG7qkkHI-S_cg0Xq1ZjRkGCujjzc",
+      authDomain: "todember.firebaseapp.com",
+      databaseURL: "https://todember.firebaseio.com",
+      storageBucket: "todember.appspot.com"
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
